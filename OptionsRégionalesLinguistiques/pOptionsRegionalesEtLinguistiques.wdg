@@ -1,0 +1,1971 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pOptionsRégionalesEtLinguistiques
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1a606bcb01b4d133
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAAdC5DaGsntqmfkq1J4p6eipmeEO//QiIdypV0FB6KY+wiPKnW2KoJpaKmeXvb1NGpH4KGGthHXu/V4LqeilI4jnJwO5Q==
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAQvXZ1Go0oEjcqmCW1AwO4TThOuxvLwIV9+je3B2annsTBnbtyLqbCHU5ybkDI7KLgbjVI1/a9dHbFVJ0W+zKPLiYEvpFBYO2+JNnGji2/8f2NA7DikOsIqvKF1HpdL3E1dWp658AL0/L7IqUPvJBLE9IpTd0pZH7qJh5vzhQxBPCBIIbSVzYdHn5TZtCRs3B1YKEi9aYUiPtj8eIL4ePOvRMSuhXbPV0yaBMYPmL65JqiPLigLFeCTgWRvW0EVET5QxfQX1mB9NeFzxqEYp2aneX/mRMa8KU/Clk3e5WIM/Fpi4pjZK0Z9MSxj/Q/2Z4blsGgE0xNDFBvGdhW+Tc4AFY26qlBDHUOBatKzwX4QxtUlAoYdPrMcBFSqloqNObVugce7ah26A9giLsiEtP4BRcbPgtO4blddVW4Mmu7Hfpo+a5s7nMbLbcT2hVxTccBz8PckcQJNATWqicTxS9EIMU/4QIObIf+cQ7oXbN4SmdR6ZwCOsZOT1eaLff8Sh0Js70xTjyC/kczaXYDMqYFpsA3+LsJ0I4cPI8X9OcdW5RZjQUdMvhCpL8zXUXJp7EsrshjHJ7ojnuKXf1Cur8vxeV+xGCvIn+Uv0N4q3DmAriEqMwnYLQFUf2wS4DBDRB+arHMeIuCfHPAt1Q2iNI8SvjprH508QEgi6VQhqt70byFAo2NqzhNv7fQrSb5WVEi1jwIzNygTAdGENlNaPgAN35aydqATsIDcClRq1Mk7JMoiJASlaMBNazrgJ/9zZ2i2760hvYAZElouwBSUzrW4Zk2t8TXcjvA85DGcnNHF5mztrEv4A7T4nPOa2bOBtjxzH9sAQwBe5vs9e9KZG+HG/kqLBwlE5TUWTlM2CzStLZTJBzG0hV5rZStzoT4fGTgidRdHm61WJgh2v7dhodnfn2kHYsN7ghC3P+AR8IWcxPblU1gAFHskAu+7ClO3Ui+LAqr7rCIBmBznWMElP0JVWL6kpCIgsOLcO2yqaJBdKPux19/UL7nqTHC0Y/xqGAjN1nSQFsxd8TyvgvpSemxY1waMz+DfHaXBYUMWDjEFWljTneOsZn8uZADeYj9txhCmli+4RvYxsuZgWNaRTOZuONzrSgpgtYww5Qqu6tlgEg7mJTwjLnF2Z5o9TsbXXOAsowOaAMyViMmYHd8GRj+g9Se3mYZNSbwzsU4TCmMxdfPNm1hzZzAzSCAOi8415Ea3Zi/JHcGD6Z+HvjJXWpIr7734cssT6vqnPKmtbuH4yTk1kGD8ecMcadMe9xsKt1Bg8i2Dl16YmRBp4guoWRcLhkoS2xLRZdqMy6Wf635j6othH8O/TdD8uphmG1A+54PZvFN70lXBkFEzqTd+gjPIVghp0O62COClfT02qRwmO87mv0PGT+UY6mqle41HSbTgbuGzrYTGHQnk+3XWgeyB17ngZ3mXow6efvtj4qHvAR99go9gY84rsbv0gKWrnHN3mAR4XL7JmcHF7/2mZuH8T08KCO97wXhlMjS5DbajZBynhX5l7zcPksEzBQt3uxt+Q==
+     code : |1-
+      gbufListeFormatsDateCourte est un Buffer 
+      gbufListeFormatsDateLongue est un Buffer 
+      gbufListeFormatsHeure est un Buffer 
+       
+      CONSTANT
+      	
+      	LOCALE_USER_DEFAULT = 0x0400		//Utilisateur
+      	LOCALE_SYSTEM_DEFAULT = 0x0800		//Système
+      		
+      		
+      	//********************************************** Pays du poste ****************************************************//
+      	LOCALE_ICOUNTRY = 5							//Code du pays
+      	LOCALE_SENGCOUNTRY = 4098					//Nom du pays, en anglais
+      	LOCALE_SCOUNTRY = 6   						//Nom du pays, dans la langue du poste
+      	LOCALE_SNATIVECTRYNAME = 8					//Nom du pays, dans la langue du pays
+      	LOCALE_SABBREVCTRYNAME = 7					//Abréviation du nom du pays
+      		
+      	//**********************************************Langue du poste ****************************************************//
+      	LOCALE_ILANGUAGE = 1						//Identifiant de la langue du poste
+      	LOCALE_SENGLANGUAGE = 4097					//Nom de la langue, en anglais
+      	LOCALE_SLANGUAGE = 2						//Nom de la langue, dans la langue du poste	
+      	LOCALE_SNATIVELANGNAME = 4					//Nom de la langue, dans la langue du pays
+      	LOCALE_SABBREVLANGNAME = 3 					//Abréviation du nom de la langue
+      		
+      	//********************************************** Monnaie du poste ****************************************************//
+      	LOCALE_SENGCURRNAME = 4103					//Nom anglais de la monnaie
+      	LOCALE_SNATIVECURRNAME = 4104			    //Nom de la monnaie dans la langue du pays
+      		
+      		
+      	//********************************************** Calendrier ****************************************************//
+      	LOCALE_IFIRSTDAYOFWEEK = 4108 				//Premier jour de la semaine
+      	LOCALE_SDAYNAME1 = 42                    	//Nom pour lundi dans la langue du poste
+      	LOCALE_SDAYNAME2 = 43                    	//Nom pour mardi dans la langue du poste
+      	LOCALE_SDAYNAME3 = 44                     	//Nom pour mercredi dans la langue du poste
+      	LOCALE_SDAYNAME4 = 45                     	//Nom pour jeudi dans la langue du poste
+      	LOCALE_SDAYNAME5 = 46                     	//Nom pour vendredi dans la langue du poste
+      	LOCALE_SDAYNAME6 = 47                     	//Nom pour samedi dans la langue du poste
+      	LOCALE_SDAYNAME7 = 48                     	//Nom pour dimanche dans la langue du poste
+      		
+      	//********************************************** Nombres ****************************************************//
+      	LOCALE_SDECIMAL = 14						//Séparateur décimal pour les nombres
+      	LOCALE_IDIGITS = 17							//Nombre de décimales pour les nombres
+      	LOCALE_STHOUSAND = 15						//Séparateur de milliers pour les nombres
+      	LOCALE_SGROUPING = 16						//Groupement des chiffres pour les nombres
+      	LOCALE_SNEGATIVESIGN = 81					//Symbole du signe négatif pour les nombres
+      	LOCALE_INEGNUMBER = 4112                  	//Format négatif pour les nombres
+      	LOCALE_ILZERO = 18	                        //Afficher les zéros en en-tête
+      	LOCALE_SLIST = 12    	                    //Séparateur de listes
+      	LOCALE_IMEASURE = 13    	                //Métrique ou pouces
+      	LOCALE_IDIGITSUBSTITUTION = 4116          	//0 = none, 1 = context, 2 = native digit
+      		
+      		
+      	//********************************************** Monétaires ****************************************************//
+      	LOCALE_SCURRENCY = 20 						//Symbole monétaire
+      	LOCALE_ICURRENCY = 27						//Format positif pour les monétaires
+      	LOCALE_INEGCURR = 28						//Format négatif pour les monétaires
+      	LOCALE_SMONDECIMALSEP = 22 					//Séparateur décimal pour les monétaires
+      	LOCALE_ICURRDIGITS = 25						//Nombre de décimales pour les monétaires
+      	LOCALE_SMONTHOUSANDSEP = 23 				//Séparateur de milliers pour les monétaires
+      	LOCALE_SMONGROUPING = 24   					//Groupement des chiffres pour les monétaires
+      		
+      		
+      	//********************************************** Heures ****************************************************//	
+      	LOCALE_STIMEFORMAT = 4099              	    //Format de l'heure
+      	LOCALE_S1159 = 40                       	//Symbole AM
+      	LOCALE_S2359 = 41                        	//Symbole PM
+      		
+      		
+      		
+      	//********************************************** Dates ****************************************************//	
+      	LOCALE_SSHORTDATE = 31                  	//Format de la date courte
+      	LOCALE_SLONGDATE = 32	                  	//Format de la date longue
+      	DATE_SHORTDATE = 1							//Sert pour lister les formats de date courte disponible pour la langue en cours
+      	DATE_LONGDATE = 2 							//Sert pour lister les formats de date longue disponible pour la langue en cours
+      	DATE_YEARMONTH = 8 							//Sert pour lister les formats de mois et années
+      	
+      	
+      	//********************************************** Symboles ****************************************************//
+      	SIGNE_MOINS = "-"
+      	PARENTHESE_OUVRANTE = "("
+      	PARENTHESE_FERMANTE = ")"
+      	
+      	
+      	//********************************************** Langues ****************************************************//
+      	
+      	
+      	//Langues principales
+      	
+      	LANG_NEUTRAL	=	0x00	//	Neutral	
+      	LANG_ARABIC	=	0x01	//	Arabic	
+      	LANG_BULGARIAN	=	0x02	//	Bulgarian	
+      	LANG_CATALAN	=	0x03	//	Catalan	
+      	LANG_CHINESE	=	0x04	//	Chinese	
+      	LANG_CZECH	=	0x05	//	Czech	
+      	LANG_DANISH	=	0x06	//	Danish	
+      	LANG_GERMAN	=	0x07	//	German	
+      	LANG_GREEK	=	0x08	//	Greek	
+      	LANG_ENGLISH	=	0x09	//	English	
+      	LANG_SPANISH	=	0x0a	//	Spanish	
+      	LANG_FINNISH	=	0x0b	//	Finnish	
+      	LANG_FRENCH	=	0x0c	//	French	
+      	LANG_HEBREW	=	0x0d	//	Hebrew	
+      	LANG_HUNGARIAN	=	0x0e	//	Hungarian	
+      	LANG_ICELANDIC	=	0x0f	//	Icelandic	
+      	LANG_ITALIAN	=	0x10	//	Italian	
+      	LANG_JAPANESE	=	0x11	//	Japanese	
+      	LANG_KOREAN	=	0x12	//	Korean	
+      	LANG_DUTCH	=	0x13	//	Dutch	
+      	LANG_NORWEGIAN	=	0x14	//	Norwegian	
+      	LANG_POLISH	=	0x15	//	Polish	
+      	LANG_PORTUGUESE	=	0x16	//	Portuguese	
+      	LANG_ROMANIAN	=	0x18	//	Romanian	
+      	LANG_RUSSIAN	=	0x19	//	Russian	
+      	LANG_CROATIAN	=	0x1a	//	Croatian	
+      	LANG_SERBIAN	=	0x1a	//	Serbian	
+      	LANG_SLOVAK	=	0x1b	//	Slovak	
+      	LANG_ALBANIAN	=	0x1c	//	Albanian	
+      	LANG_SWEDISH	=	0x1d	//	Swedish	
+      	LANG_THAI	=	0x1e	//	Thai	
+      	LANG_TURKISH	=	0x1f	//	Turkish	
+      	LANG_URDU	=	0x20	//	Urdu	
+      	LANG_INDONESIAN	=	0x21	//	Indonesian	
+      	LANG_UKRAINIAN	=	0x22	//	Ukrainian	
+      	LANG_BELARUSIAN	=	0x23	//	Belarusian	
+      	LANG_SLOVENIAN	=	0x24	//	Slovenian	
+      	LANG_ESTONIAN	=	0x25	//	Estonian	
+      	LANG_LATVIAN	=	0x26	//	Latvian	
+      	LANG_LITHUANIAN	=	0x27	//	Lithuanian	
+      	LANG_FARSI	=	0x29	//	Farsi	
+      	LANG_VIETNAMESE	=	0x2a	//	Vietnamese	
+      	LANG_ARMENIAN	=	0x2b	//	Armenian	
+      	LANG_AZERI	=	0x2c	//	Azeri	
+      	LANG_BASQUE	=	0x2d	//	Basque	
+      	LANG_MACEDONIAN	=	0x2f	//	FYRO	Macedonian
+      	LANG_AFRIKAANS	=	0x36	//	Afrikaans	
+      	LANG_GEORGIAN	=	0x37	//	Georgian	
+      	LANG_FAEROESE	=	0x38	//	Faeroese	
+      	LANG_HINDI	=	0x39	//	Hindi	
+      	LANG_MALAY	=	0x3e	//	Malay	
+      	LANG_KAZAK	=	0x3f	//	Kazak	
+      	LANG_KYRGYZ	=	0x40	//	Kyrgyz	
+      	LANG_SWAHILI	=	0x41	//	Swahili	
+      	LANG_UZBEK	=	0x43	//	Uzbek	
+      	LANG_TATAR	=	0x44	//	Tatar	
+      	LANG_BENGALI	=	0x45	//	NOT	supported.
+      	LANG_PUNJABI	=	0x46	//	Punjabi	
+      	LANG_GUJARATI	=	0x47	//	Gujarati	
+      	LANG_ORIYA	=	0x48	//	NOT	supported.
+      	LANG_TAMIL	=	0x49	//	Tamil	
+      	LANG_TELUGU	=	0x4a	//	Telugu	
+      	LANG_KANNADA	=	0x4b	//	Kannada	
+      	LANG_MALAYALAM	=	0x4c	//	NOT	supported.
+      	LANG_ASSAMESE	=	0x4d	//	NOT	supported.
+      	LANG_MARATHI	=	0x4e	//	Marathi	
+      	LANG_SANSKRIT	=	0x4f	//	Sanskrit	
+      	LANG_MONGOLIAN	=	0x50	//	Mongolian	
+      	LANG_GALICIAN	=	0x56	//	Galician	
+      	LANG_KONKANI	=	0x57	//	Konkani	
+      	LANG_MANIPURI	=	0x58	//	NOT	supported.
+      	LANG_SINDHI	=	0x59	//	NOT	supported.
+      	LANG_SYRIAC	=	0x5a	//	Syriac	
+      	LANG_KASHMIRI	=	0x60	//	NOT	supported.
+      	LANG_NEPALI	=	0x61	//	NOT	supported.
+      	LANG_DIVEHI	=	0x65	//	Divehi	
+      	LANG_INVARIANT	=	0x7f	//
+      	
+      	
+      	//Sous-langues		
+      	
+      	SUBLANG_ARABIC_SAUDI_ARABIA	=	0x01	//	Arabic	(Saudi	Arabia)	
+      	SUBLANG_ARABIC_IRAQ	=	0x02	//	Arabic	(Iraq)		
+      	SUBLANG_ARABIC_EGYPT	=	0x03	//	Arabic	(Egypt)		
+      	SUBLANG_ARABIC_LIBYA	=	0x04	//	Arabic	(Libya)		
+      	SUBLANG_ARABIC_ALGERIA	=	0x05	//	Arabic	(Algeria)		
+      	SUBLANG_ARABIC_MOROCCO	=	0x06	//	Arabic	(Morocco)		
+      	SUBLANG_ARABIC_TUNISIA	=	0x07	//	Arabic	(Tunisia)		
+      	SUBLANG_ARABIC_OMAN	=	0x08	//	Arabic	(Oman)		
+      	SUBLANG_ARABIC_YEMEN	=	0x09	//	Arabic	(Yemen)		
+      	SUBLANG_ARABIC_SYRIA	=	0x0a	//	Arabic	(Syria)		
+      	SUBLANG_ARABIC_JORDAN	=	0x0b	//	Arabic	(Jordan)		
+      	SUBLANG_ARABIC_LEBANON	=	0x0c	//	Arabic	(Lebanon)		
+      	SUBLANG_ARABIC_KUWAIT	=	0x0d	//	Arabic	(Kuwait)		
+      	SUBLANG_ARABIC_UAE	=	0x0e	//	Arabic	(U.A.E.)		
+      	SUBLANG_ARABIC_BAHRAIN	=	0x0f	//	Arabic	(Bahrain)		
+      	SUBLANG_ARABIC_QATAR	=	0x10	//	Arabic	(Qatar)		
+      	
+      	SUBLANG_AZERI_LATIN	=	0x01	//	Azeri	(Latin)		
+      	SUBLANG_AZERI_CYRILLIC	=	0x02	//	Azeri	(Cyrillic)		
+      	
+      	SUBLANG_CHINESE_TRADITIONAL	=	0x01	//	Chinese	(Traditional)		
+      	SUBLANG_CHINESE_SIMPLIFIED	=	0x02	//	Chinese	(Simplified)		
+      	SUBLANG_CHINESE_HONGKONG	=	0x03	//	Chinese	(Hong	Kong	SAR,
+      	SUBLANG_CHINESE_SINGAPORE	=	0x04	//	Chinese	(Singapore)		
+      	SUBLANG_CHINESE_MACAU	=	0x05	//	Chinese	(Macau	SAR)	
+      	
+      	SUBLANG_DUTCH	=	0x01	//	Dutch			
+      	SUBLANG_DUTCH_BELGIAN	=	0x02	//	Dutch	(Belgian)		
+      	
+      	SUBLANG_ENGLISH_US	=	0x01	//	English	(US)		
+      	SUBLANG_ENGLISH_UK	=	0x02	//	English	(UK)		
+      	SUBLANG_ENGLISH_AUS	=	0x03	//	English	(Australian)		
+      	SUBLANG_ENGLISH_CAN	=	0x04	//	English	(Canadian)		
+      	SUBLANG_ENGLISH_NZ	=	0x05	//	English	(New	Zealand)	
+      	SUBLANG_ENGLISH_EIRE	=	0x06	//	English	(Ireland)		
+      	SUBLANG_ENGLISH_SOUTH_AFRICA	=	0x07	//	English	(South	Africa)	
+      	SUBLANG_ENGLISH_JAMAICA	=	0x08	//	English	(Jamaica)		
+      	SUBLANG_ENGLISH_CARIBBEAN	=	0x09	//	English	(Caribbean)		
+      	SUBLANG_ENGLISH_BELIZE	=	0x0a	//	English	(Belize)		
+      	SUBLANG_ENGLISH_TRINIDAD	=	0x0b	//	English	(Trinidad)		
+      	SUBLANG_ENGLISH_ZIMBABWE	=	0x0c	//	English	(Zimbabwe)		
+      	SUBLANG_ENGLISH_PHILIPPINES	=	0x0d	//	English	(Philippines)		
+      	
+      	SUBLANG_FRENCH	=	0x01	//	French			
+      	SUBLANG_FRENCH_BELGIAN	=	0x02	//	French	(Belgian)		
+      	SUBLANG_FRENCH_CANADIAN	=	0x03	//	French	(Canadian)		
+      	SUBLANG_FRENCH_SWISS	=	0x04	//	French	(Swiss)		
+      	SUBLANG_FRENCH_LUXEMBOURG	=	0x05	//	French	(Luxembourg)		
+      	SUBLANG_FRENCH_MONACO	=	0x06	//	French	(Monaco)		
+      	
+      	SUBLANG_GERMAN	=	0x01	//	German			
+      	SUBLANG_GERMAN_SWISS	=	0x02	//	German	(Swiss)		
+      	SUBLANG_GERMAN_AUSTRIAN	=	0x03	//	German	(Austrian)		
+      	SUBLANG_GERMAN_LUXEMBOURG	=	0x04	//	German	(Luxembourg)		
+      	SUBLANG_GERMAN_LIECHTENSTEIN	=	0x05	//	German	(Liechtenstein)		
+      	
+      	SUBLANG_ITALIAN	=	0x01	//	Italian			
+      	SUBLANG_ITALIAN_SWISS	=	0x02	//	Italian	(Swiss)		
+      	
+      	SUBLANG_KOREAN	=	0x01	//	Korean			
+      	
+      	SUBLANG_LITHUANIAN	=	0x01	//	Lithuanian			
+      	
+      	SUBLANG_MALAY_MALAYSIA	=	0x01	//	Malay	(Malaysia)		
+      	SUBLANG_MALAY_BRUNEI_DARUSSALAM	=	0x02	//	Malay	(Brunei	Darassalam)	
+      	
+      	SUBLANG_NORWEGIAN_BOKMAL	=	0x01	//	Norwegian	(Bokmal)		
+      	SUBLANG_NORWEGIAN_NYNORSK	=	0x02	//	Norwegian	(Nynorsk)		
+      	
+      	SUBLANG_PORTUGUESE_BRAZILIAN	=	0x01	//	Portuguese	(Brazil)		
+      	SUBLANG_PORTUGUESE	=	0x02	//	Portuguese	(Portugal)		
+      	
+      	SUBLANG_SERBIAN_LATIN	=	0x02	//	Serbian	(Latin)		
+      	SUBLANG_SERBIAN_CYRILLIC	=	0x03	//	Serbian	(Cyrillic)		
+      	
+      	SUBLANG_SPANISH	=	0x01	//	Spanish	(Castilian)		
+      	SUBLANG_SPANISH_MEXICAN	=	0x02	//	Spanish	(Mexican)		
+      	SUBLANG_SPANISH_MODERN	=	0x03	//	Spanish	(Spain)		
+      	SUBLANG_SPANISH_GUATEMALA	=	0x04	//	Spanish	(Guatemala)		
+      	SUBLANG_SPANISH_COSTA_RICA	=	0x05	//	Spanish	(Costa	Rica)	
+      	SUBLANG_SPANISH_PANAMA	=	0x06	//	Spanish	(Panama)		
+      	SUBLANG_SPANISH_DOMINICAN_REPUBLIC	=	0x07	//	Spanish	(Dominican	Republic)	
+      	SUBLANG_SPANISH_VENEZUELA	=	0x08	//	Spanish	(Venezuela)		
+      	SUBLANG_SPANISH_COLOMBIA	=	0x09	//	Spanish	(Colombia)		
+      	SUBLANG_SPANISH_PERU	=	0x0a	//	Spanish	(Peru)		
+      	SUBLANG_SPANISH_ARGENTINA	=	0x0b	//	Spanish	(Argentina)		
+      	SUBLANG_SPANISH_ECUADOR	=	0x0c	//	Spanish	(Ecuador)		
+      	SUBLANG_SPANISH_CHILE	=	0x0d	//	Spanish	(Chile)		
+      	SUBLANG_SPANISH_URUGUAY	=	0x0e	//	Spanish	(Uruguay)		
+      	SUBLANG_SPANISH_PARAGUAY	=	0x0f	//	Spanish	(Paraguay)		
+      	SUBLANG_SPANISH_BOLIVIA	=	0x10	//	Spanish	(Bolivia)		
+      	SUBLANG_SPANISH_EL_SALVADOR	=	0x11	//	Spanish	(El	Salvador)	
+      	SUBLANG_SPANISH_HONDURAS	=	0x12	//	Spanish	(Honduras)		
+      	SUBLANG_SPANISH_NICARAGUA	=	0x13	//	Spanish	(Nicaragua)		
+      	SUBLANG_SPANISH_PUERTO_RICO	=	0x14	//	Spanish	(Puerto	Rico)	
+      	
+      	SUBLANG_SWEDISH	=	0x01	//	Swedish			
+      	SUBLANG_SWEDISH_FINLAND	=	0x02	//	Swedish	(Finland)		
+      	
+      	SUBLANG_URDU_PAKISTAN	=	0x01	//	Urdu	(Pakistan)		
+      	SUBLANG_URDU_INDIA	=	0x02	//	Urdu	(India)		
+      	
+      	SUBLANG_UZBEK_LATIN	=	0x01	//	Uzbek	(Latin)		
+      	SUBLANG_UZBEK_CYRILLIC	=	0x02	//	Uzbek	(Cyrillic)
+      	
+      FIN
+     type : 720896
+  procedures :
+   -
+     name : Monétaire_SymboleMonétaire
+     internal_properties : CAAAAAgAAADapy0UreDd41TvOGrU8PTkY640J76QFAhMc6i7LL7dqU2RP+9nkAia0Sneb2sYj9nGgiRSu4fo23Kz0lDqYlGAQd2TghUncbaRiTnBM2atBnP0I62uV8wiqK2vrGW+Nq7dtSULAKVR+aqgy/cH4stha7pXXlAB5Jjmrn1aaMUJ7+C6jz7fuc2u8SS3WoUgmidLUVcTasRyx2MqwVNBH2KFhFfhXNB68wBFXGFhyO/RoKs/zk80RGedh60yfyNXrQ==
+     procedure_id : 1900637639710939092
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le symbole monétaire, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_SymboleMonétaire ( [<nInfosDeQui> est entier [, <sSymbole> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sSymbole (chaîne - valeur par défaut="") : Nouveau symbole
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole monétaire, vrai ou faux si on le modifie
+      
+      Procédure Monétaire_SymboleMonétaire(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSymbole est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le symbole monétaire
+      si sSymbole = "" alors
+      	
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SCURRENCY, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		renvoyer ""
+      	SINON
+      		// Copie du Buffer
+      		sMonétaireSymbole est une chaine
+      		sMonétaireSymbole = Gauche(bufRésultat, nTailleBuffer-1)
+      		renvoyer sMonétaireSymbole 
+      	FIN
+      
+      sinon
+      	
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SCURRENCY, sSymbole) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+     type : 458752
+   -
+     name : Monétaire_FormatPositif
+     internal_properties : CAAAAAgAAAC4KPzjs+Jph2EySwJjklpJplnanuoGxB5xFmDl4J+zh19lY40oqdOyypuURhQtNH6MVzJkJdPuabjPRlDo/lxA3reyQAwY0mL/Q9/sZNNlZ07oQ1xhZ/qWWKHtvEbT4Hj7kz/+feOc4DoOvV+bre1Kc0RN2X23ZRH8dlmQIty9JsaY+VNCg6iLdRi3WnkzWhZ9W5n+X8JRhr/+KQF7OrKoznflGV8+pkwcGcYdVv4Tt8/jZYs/NDDUqn6ACHueQ6i7
+     procedure_id : 1900645254688221085
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le format positif pour les monétaires, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_FormatPositif ( [<nInfosDeQui> est entier [, <sFormat> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sFormat (chaîne - valeur par défaut="") : Nouveau format pour les positifs
+      // Valeur de retour :
+      // 	Type indéterminé : Format positif pour les monétaires, vrai ou Faux si on le modifie
+      
+      Procédure Monétaire_FormatPositif(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sFormat est une chaine = "")
+      
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      //Création du tableau associatif des formats positifs des monétaires 
+      tabMonétaireFormatsPositifs est un tableau de chaines
+      _CréeTabMonétaireFormatsPositifs(nInfosDeQui, tabMonétaireFormatsPositifs)
+      
+      si sFormat = "" alors
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_ICURRENCY, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sFormatPositif est une chaîne
+      		sFormatPositif = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER tabMonétaireFormatsPositifs[Val(sFormatPositif) + 1 ]
+      		
+      	FIN
+      sinon
+      	
+      	//On le modifie
+      	nIndice est un entier = TableauCherche(tabMonétaireFormatsPositifs,tcLinéaire,sFormat)
+      	nIndice--
+      	sFormat = nIndice
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_ICURRENCY, sFormat) = 0 ALORS
+      		RENVOYER Faux
+      	SINON
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+      
+     type : 458752
+   -
+     name : Monétaire_FormatNégatif
+     internal_properties : CAAAAAgAAADI2EyTI7IZ/9HCi2KD0hrpJskKbjrW9H6RdhCVcG+D10+lQ40IaVMCmqt0xpQN9F4MB+J0VQM+qRgvNsA4LiywLjfSwAx4chJPk58MxFPFR+7YkwyRl8q2WMGdbFYjsEgzS9dmRUv0OGLmhYczBSXSqzzFQUU/PWkEDiEYurRVTr7w0RuKa4ADndD/AtFLkh7VM9Em50rpvuc20elzMmoQ5s/dIYeGHqSEsW5ljrbrn8f7HVOnHCiscq6w2Avu89hL
+     procedure_id : 1900645301932937142
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le format négatif pour les monétaires, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_FormatNégatif ( [<nInfosDeQui> est entier [, <sFormat> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sFormat (chaîne - valeur par défaut="") : Nouveau format pour les négatifs
+      // Valeur de retour :
+      // 	Type indéterminé : Format négatif pour les monétaires, Vrai ou Faux si on le modifie
+      
+      PROCEDURE Monétaire_FormatNégatif(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sFormat est une chaine = "")
+      
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      //Création du tableau associatif des formats négatifs des monétaires 
+      tabMonétaireFormatsnégatifs est un tableau de chaines
+      _CréeTabmonétaireFormatsNégatifs(nInfosDeQui, tabMonétaireFormatsnégatifs)
+      
+      si sFormat = "" alors
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_INEGCURR, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sFormatNégatif est une chaîne
+      		sFormatNégatif = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER tabMonétaireFormatsnégatifs[Val(sFormatNégatif) + 1 ]
+      	FIN
+      	
+      sinon
+      	//On le modifie
+      	nIndice est un entier = TableauCherche(tabMonétaireFormatsnégatifs,tcLinéaire,sFormat)
+      	nIndice--
+      	sFormat = nIndice
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_INEGCURR, sFormat) = 0 ALORS
+      		RENVOYER Faux
+      	SINON
+      		RENVOYER Vrai
+      	FIN
+      fin
+      
+     type : 458752
+   -
+     name : Monétaire_SéparateurDécimales
+     internal_properties : CAAAAAgAAAAKd30EvXBRYwyXeKoUqKR0k+Ykn/ZIFKD84wCjVJ5VcSWxx//XkEDqqSEeP7+Yj1lGgiRSOwdo2/KzUtDqYtGAQV0TAhUncTaRCTnBs+athvP0I60u10wiKK0vLGW+tu4ddWXLQOWRuWpgCzdHoouhq3qXHpBBJFimbr2aqIXJLyB6z/4f+Q1useT3msXgWmeLEet/ZmgGA5eOhQ89W06RMItliJwed5w58PUNpPv9DLfDQksw6PspFz1Cb9OH/Q==
+     procedure_id : 1900645357767591332
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le symbole décimal pour les monétaires, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_SéparateurDécimales ( [<nInfosDeQui> est entier [, <sSymbole> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sSymbole (chaîne - valeur par défaut="") : Nouveau symbole
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole décimal pour les monétaires
+      
+      Procédure Monétaire_SéparateurDécimales(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSymbole est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le symbole décimal pour les monétaires
+      si sSymbole = "" alors
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, locale_SMONDECIMALSEP , &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sSéparateurDécimales est une chaine
+      		sSéparateurDécimales = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sSéparateurDécimales 
+      	FIN
+      	
+      sinon
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SMONDECIMALSEP, sSymbole) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      fin
+     type : 458752
+   -
+     name : Monétaire_NombreDécimales
+     internal_properties : CAAAAAgAAACIGIxTY3LZx/Gie9JTour5dklyrvpWdL6RdpDVMO8DV49lA40IqRMCWus0xhTNNJ6MR2K0FYO+6RivtoD4rqyw7reSwAw4spKP018MxBMFh+6Yk0xRl8r2WMEdrJYjMEjTq7cGZauU2MLGJSeTpcWyyxwl4WWfXQnkbkE4mtR1Lt5QMbuqSyCjfTCforFrMn71k7HGh6qJ3scWcYnT0gowRu/9AWem/oSk0U5FrpbT9++jJUu/lLC0qm7wmMsuM5iL
+     procedure_id : 1900659591294620608
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le nombre de décimales pour les monétaires, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_NombreDécimales ( [<nInfosDeQui> est entier [, <nNbreDécimales> est entier]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	nNbreDécimales (entier - valeur par défaut=-1) : Nouveau nombre de décimales
+      // Valeur de retour :
+      // 	Type indéterminé : Nombre de décimales pour les monétaires, Vrai ou Faux si on le modifie
+      
+      Procédure Monétaire_NombreDécimales(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL nNbreDécimales est un entier = -1)
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      si nNbreDécimales = -1 alors 
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, locale_ICURRDIGITS , &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sNombreDécimales est une chaine
+      		sNombreDécimales = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sNombreDécimales 
+      	FIN
+      	
+      sinon
+      		
+      	//On le modifie
+      	sNbreDécimales est une chaine = nNbreDécimales
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_ICURRDIGITS, sNbreDécimales) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      		
+      fin
+     type : 458752
+   -
+     name : Monétaire_SéparateurMilliers
+     internal_properties : CAAAAAgAAAB4aDyj86Ipn8GS21LTwor51hmiHsqmpD6x9mBl4P8T578Fww2ICXMSCjuUxpQNlN7sd9KkxfPOSTivhtAonnxgPhcSQOy4cgK/I9+sJLNFx+7IY5xBx9r2mIFt/MazwFgrYw+uzbOMMGpeTW/LHR1649RdyY2HVWFsxmmgEkztlraoicOS05gb5WhHKiljysZtaylurxLBFm+OuVHrquJYfkc1SS9O1lxMKdZthi6LP0ebPbNHHEhsEj7AyDveg2j7
+     procedure_id : 1900663774593086122
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le symbole de milliers pour les monétaires, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_SéparateurMilliers ( [<nInfosDeQui> est entier [, <sSép> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sSép (chaîne - valeur par défaut="") : Nouveau séparateur
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole de milliers pour les monétaires, vrai ou faux si on le modifie
+      
+      Procédure Monétaire_SéparateurMilliers(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSép est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      si sSép = "" alors
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SMONTHOUSANDSEP , &bufRésultat, 200)
+      		
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sSéparateurMilliers est une chaine
+      		sSéparateurMilliers = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sSéparateurMilliers 
+      	FIN
+      	
+      sinon
+      	
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SMONTHOUSANDSEP, sSép) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      fin
+     type : 458752
+   -
+     name : Nombre_SéparateurDécimales
+     internal_properties : CAAAAAgAAACi39Us1fffu2RPBHQYIlDcBfWIP1q4VGRAd/BLuLatheF9c5+7OICGZT2Op2vQbw1qdthy19dgz4YXOlhumlGsJXFv8pmHIRLlvVmZz+7twn8InwWax3w+TBE/DIkePvST5xc5uvuvS+Da9Q0VOKn/CezZrEp3Unqc2HdYRqsnhWbMmcQ5h3PYLx6hMOP2UH1RY329+B60Vf2Qhw3rQbQ/Lv3fvi4MfUZfii/LWkzsQ0xeJSgVQUSWvMXalzsvVQ==
+     procedure_id : 1900679661680222330
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le symbole décimal pour les nombres, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_SéparateurDécimales ( [<nInfosDeQui> est entier [, <sNouveauSéparateur> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sNouveauSéparateur (chaîne - valeur par défaut="") : Nouveau symbole décimal
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole décimal pour les nombres, vrai ou faux si on le modifie
+      
+      Procédure Nombre_SéparateurDécimales(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sNouveauSéparateur est une chaine ="")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le séparateur de décimales
+      si sNouveauSéparateur = "" alors 
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SDECIMAL, &bufRésultat, 200)
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sSéparateurDécimales est une chaîne
+      		sSéparateurDécimales = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sSéparateurDécimales 
+      	FIN
+      	
+      sinon
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SDECIMAL, sNouveauSéparateur) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+     type : 458752
+   -
+     name : Nombre_NombreDécimales
+     internal_properties : CAAAAAgAAAA6R030jYC5w/x3WKpEyITEYxY038aoNJCck7AzFO4l0YVRR49XYNBqueEen4/4T+m2EnSSy2fIa5JjYsDK8sGAwV1T0pVX4Zbhybnhw6YNVsOkEy3+V8yyyF3/fCXOxkbFjU2jqF0JcRII8w8vGmOZsxL/1jiZXNAu9iVycJ1hZ8iy91an8eXmOezf8m240j+TKbMXbkD+ex8WDYdl0waJGOMNIKQWj5QhGL1FrNO1hL87CqO4YFOBp40SX8O3zQ==
+     procedure_id : 1900680490609234472
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le nombre de décimales pour les nombres, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_NombreDécimales ( [<nInfosDeQui> est entier [, <nNbreDécimales> est entier]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	nNbreDécimales (entier - valeur par défaut=-1) : Nouveau nombre de décimales
+      // Valeur de retour :
+      // 	Type indéterminé : Nombre de décimales pour les nombres, -1 si erreur, vrai ou faux si on le modifie
+      
+      Procédure Nombre_NombreDécimales(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL nNbreDécimales est un entier = -1 )
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le nombre de décimales
+      si nNbreDécimales = -1 alors
+      	 
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_IDIGITS , &bufRésultat, 200)
+      		
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER -1
+      	SINON
+      		// Copie du Buffer
+      		sNombreDécimales est une chaine
+      		sNombreDécimales = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER val(sNombreDécimales)
+      	FIN
+      	
+      sinon
+      	
+      	//On le modifie
+      	sNbreDécimales est une chaine = nNbreDécimales
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_IDIGITS, sNbreDécimales) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+     type : 458752
+   -
+     name : Nombre_SéparateurMilliers
+     internal_properties : CAAAAAgAAADSryUc5djFG2zXEHLM+Hxci4YcvyY4TNC0C9CT9PaVsaW5F5f/aJASSbFW94fIxwF+4rwSGyeAiwobsmDK6qFQkYXzem1/oR7xeZHJiyaV3lsU+60up/Si4CXvXFVGhmppKen3XDkFZQ4kn6ODrtcNN54L+gxVKBS6IvGmhNF1GwxuY2rLvcGalbjbRsEMtiPH1e+L4kz6T/uyWfspB3qdvA8phLhSy1jttMn5oAc5CDNHxkdMbI9Ff9XqhytfpQ==
+     procedure_id : 1900681173509915177
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le séparateur de milliers pour les nombres, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_SéparateurMilliers ( [<nInfosDeQui> est entier [, <sSép> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sSép (chaîne - valeur par défaut="") : Nouveau séparateur de milliers
+      // Valeur de retour :
+      // 	Type indéterminé : Séparateur de milliers pour les nombres, vrai ou faux si on le modifie
+      
+      Procédure Nombre_SéparateurMilliers(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSép est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le séparateur de milliers actuel
+      si sSép = "" alors
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_STHOUSAND , &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sSéparateurMilliers est une chaine
+      		sSéparateurMilliers = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sSéparateurMilliers 
+      	FIN
+      	
+      sinon
+      	
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_STHOUSAND, sSép) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+     type : 458752
+   -
+     name : Monétaire_GroupementChiffres
+     internal_properties : CAAAAAgAAAC9ptWzlw9impfLYv5km4JPSrdUquUg+g6alG0D2vOQ8jJf37QdGzFKfeEwYkqsTW6QzFTEeTmKE3f5/m0RmduJCqvkU4e4cTFbLx6Q+bJd3zjhkzjnOHTSRybhXpd8qSfkcCj2DPd+5ocOU0duzLRmjickk5ibMxmn8P00a/06ktR8mSrghktyvR9sZcNXXke7AwF/DQdi4bFlKlIbKoITJ4LsK9Ia0BqfJ4alUV8Iil1V7O5a
+     procedure_id : 1900682380396596385
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le groupement des chiffres pour les monétaires
+      // Syntaxe :
+      //[ <Résultat> = ] Monétaire_GroupementChiffres ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      // Valeur de retour :
+      // 	chaîne : Groupement des chiffres
+      
+      Procédure Monétaire_GroupementChiffres(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SMONGROUPING , &bufRésultat, 200)
+      sSéparateurMilliers est une chaine = Monétaire_SéparateurMilliers(nInfosDeQui)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	renvoyer ""
+      SINON
+      	// Copie du Buffer
+      	sGroupementChiffres est une chaine
+      	
+      	//On récupère une chaîne dans ce style :
+      	//3;0 => 123 456 789
+      	//3;2;0 => 12 34 56 789
+      	//3 => 123456 789
+      	//3;2 => 1234 56 789
+      	sGroupementChiffres = Gauche(bufRésultat, nTailleBuffer-1)
+      	
+      	//On va donc transformer ça en représentation "humaine"
+      	sGroupementChiffresEnClair est une chaine
+      	sGroupementChiffresEnClair = _GroupementEnClair(sGroupementChiffres, sSéparateurMilliers)
+      	
+      	RENVOYER sGroupementChiffresEnClair 
+      FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : _GroupementEnClair
+     procedure_id : 1900682586555205604
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie une représentation claire avec un exemple du groupement des chiffres
+      // Syntaxe :
+      //[ <Résultat> = ] _GroupementEnClair (<sGroupementChiffres>, <sSéparateurMilliers>)
+      //
+      // Paramètres :
+      //	sGroupementChiffres : Groupement des chiffres tel qu'il est renvoyé par l'API
+      //	sSéparateurMilliers : Séparateur de milliers
+      // Valeur de retour :
+      // 	chaîne : Représentation claire du groupement des chiffres
+      
+      Procédure privee _GroupementEnClair(sGroupementChiffres, sSéparateurMilliers)
+      
+      sGroupementChiffresEnClair est une chaine 
+      
+      //Avec des chiffres de 1 à 9 pour reconstituer le nombre exemple qui correspond
+      nChiffre est un entier = 9
+      nNbreChiffresGroupe est un entier 
+      nNbreChiffresGroupePréc est un entier 
+      
+      //Si sGroupementChiffres = "0" => il n'y a pas de groupement ..on affichera les chiffres tout à la suite sans séparateur
+      SI sGroupementChiffres <> "0" ALORS 
+      	
+      	//Si on a des groupements, on les parcourt
+      	POUR TOUTE CHAINE sGroupe DE sGroupementChiffres SEPAREE PAR ";"
+      		
+      		//On récupère le nombre de chiffres affichés dans le groupement
+      		nNbreChiffresGroupe = Val(sgroupe)
+      		
+      		//Si c'est 0.. il faut répéter le style du précédent groupement jusqu'à plus de chiffre  
+      		SI nNbreChiffresGroupe = 0 ALORS
+      			
+      			nNbreChiffresGroupe = nNbreChiffresGroupePréc
+      			tantque nChiffre > 0
+      				
+      				POUR i = 1 A nNbreChiffresGroupePréc
+      					sGroupementChiffresEnClair = nChiffre + sGroupementChiffresEnClair
+      					nChiffre --
+      				FIN
+      				si nChiffre <> 0 alors 
+      					sGroupementChiffresEnClair = sSéparateurMilliers + sGroupementChiffresEnClair
+      				fin
+      			FIN
+      			
+      		SINON
+      			
+      			//On met à jour le groupement précédent, c'est au cas où il y aurait 0 pour le groupement suivant
+      			nNbreChiffresGroupePréc = nNbreChiffresGroupe
+      			//On ajoute les chiffres dans le nombre exemple	pour ce groupement
+      			POUR i = 1 A nNbreChiffresGroupe
+      				sGroupementChiffresEnClair = nChiffre + sGroupementChiffresEnClair
+      				nChiffre --
+      			FIN
+      			SI nChiffre <> 0 alors
+      				sGroupementChiffresEnClair = sSéparateurMilliers + sGroupementChiffresEnClair
+      			fin
+      			
+      		FIN
+      		
+      	FIN
+      FIN
+      
+      // On n'a plus de groupement spécifié et on n'a pas eu de 0 pour répéter le précédent groupement 
+      // et pourtant on a encore des chiffres à afficher
+      // => on les affiche sans groupement
+      TANTQUE nChiffre > 0 
+      	sGroupementChiffresEnClair = nChiffre + sGroupementChiffresEnClair
+      	nChiffre --
+      FIN
+      
+      renvoyer sGroupementChiffresEnClair
+     type : 458752
+   -
+     name : Nombre_GroupementChiffres
+     internal_properties : CAAAAAgAAAC9ptWzlw9impfLYv5km4JPSrdUquUg+g6alG0D2vOQ8jJf37QdGzFKfeEwYkqsTW6QzFTEeTmKE3f5/m0RmduJCqvkU4e4cTFbLx6Q+bJd3zjhkzjnOHTSRybhXpd8qSfkcCj2DPd+5ocOU0duzLRmjickk5ibMxmn8P00a/06ktR8mSrghktyvR9sZcNXXke7AwF/DQdi4bFlKlIbKoITJ4LsK9Ia0BqfJ4alUV8Iil1V7O5a
+     procedure_id : 1900686052593898933
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le groupement des chiffres pour les nombres
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_GroupementChiffres ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      // Valeur de retour :
+      // 	chaîne : Groupement des chiffres
+      
+      Procédure Nombre_GroupementChiffres(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_sGROUPING , &bufRésultat, 200)
+      sSéparateurMilliers est une chaine = nombre_SéparateurMilliers(nInfosDeQui)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	renvoyer ""
+      SINON
+      	// Copie du Buffer
+      	sGroupementChiffres est une chaine
+      	
+      	//On récupère une chaîne dans ce style :
+      	//3;0 => 123 456 789
+      	//3;2;0 => 12 34 56 789
+      	//3 => 123456 789
+      	//3;2 => 1234 56 789
+      	sGroupementChiffres = Gauche(bufRésultat, nTailleBuffer-1)
+      	
+      	//On va donc transformer ça en représentation "humaine"
+      	sGroupementChiffresEnClair est une chaine
+      	sGroupementChiffresEnClair = _GroupementEnClair(sGroupementChiffres, sSéparateurMilliers)
+      	
+      	RENVOYER sGroupementChiffresEnClair 
+      FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : Nombre_SymboleNégatif
+     internal_properties : CAAAAAgAAADapy0UreDd41TvOGrU8PTkY640J76QFAhMc6i7LL7dqU2RP+9nkAia0Sneb2sYj9nGgiRSu4fo23Kz0lDqYlGAQd2TghUncbaRiTnBM2atBnP0I62uV8wiqK2vrGW+Nq7dtSULAKVR+aqgy/cH4stha7pXXlAB5Jjmrn1aaMUJ7+C6jz7fuc2u8SS3WoUgmidLUVcTasRyx2MqwVNBH2KFhFfhXNB68wBFXGFhyO/RoKs/zk80RGedh60yfyNXrQ==
+     procedure_id : 1900688736952361313
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le symbole du signe négatif pour les nombres, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_SymboleNégatif ( [<nInfosDeQui> est entier [, <sSymbole> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sSymbole (chaîne - valeur par défaut="") : Nouveau symbole
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole du signe négatif, vrai ou faux si on le modifie
+      
+      Procédure Nombre_SymboleNégatif(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSymbole est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le symbole du signe négatif
+      si sSymbole = "" alors 
+      	
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SNEGATIVESIGN, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		renvoyer ""
+      	SINON
+      		// Copie du Buffer
+      		sSymboleNégatif est une chaine
+      		sSymboleNégatif = Gauche(bufRésultat, nTailleBuffer-1)
+      		renvoyer sSymboleNégatif 
+      	FIN
+      	
+      sinon
+      	
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SNEGATIVESIGN, sSymbole) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+     type : 458752
+   -
+     name : Nombre_FormatNégatif
+     internal_properties : CAAAAAgAAABeTt6VOdA3gS9+IIPz4xKPbI88mMAm3mZrHhltbZOrHRG397NahUliXP/4qvZJtOgK4d6yKzvYWWIDGhA+joDuREVm4iIQpD79T9/sYsNVecSyJx5Lkwj2Xq3l5Jx7nF4KDBC//rI9Zbmz0hyovjrVmkVO2n62Zg77Q66VPzGm0UHdNqi3JiEk9H1Uf6acC/1QUIbzFMWOQ1qH+jrsMwN3HaDKBtkwp00fOuc2T/dKcBiqnFun1bS2SBxumhWIXUbZ
+     procedure_id : 1900689797809464058
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le format négatif pour les nombres, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_FormatNégatif ( [<nInfosDeQui> est entier [, <sFormat> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      //	sFormat (chaîne - valeur par défaut="") : Nouveau format
+      // Valeur de retour :
+      // 	Type indéterminé : Format négatif pour les nombres, vrai ou faux si on le modifie
+      
+      PROCEDURE Nombre_FormatNégatif(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sFormat est une chaine = "")
+      
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      //Création du tableau associatif des formats négatifs des nombres 
+      tabNombreFormatsnégatifs est un tableau de chaines
+      _CréeTabNombreFormatsNégatifs(nInfosDeQui, tabNombreFormatsnégatifs)
+      
+      
+      si sFormat = "" alors
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_INEGNUMBER, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sFormatNégatif est une chaîne
+      		sFormatNégatif = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER tabNombreFormatsnégatifs[Val(sFormatNégatif) + 1 ]
+      	FIN
+      	
+      sinon
+      	
+      	nIndice est un entier = TableauCherche(tabNombreFormatsnégatifs,tcLinéaire,sFormat)
+      	nIndice--
+      	sFormat = nIndice
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_INEGNUMBER, sFormat) = 0 ALORS
+      		RENVOYER Faux
+      	sinon
+      		renvoyer vrai
+      	FIN
+      	
+      fin	
+     type : 458752
+   -
+     name : Nombre_AffichageZéroEnTete
+     internal_properties : CAAAAAgAAABP57CsF9wkZ7kaW27oX360TDmhq+igzClFTF3rr/sLvpfLh3w+SDErlnefwFIjZC0uGc1SGxo0em+YI6uEcgFZ5QMmwGTif1Y9RZlQ/sgKxa/qxEkE9u7hZm9xorcF7h7TkTjhfprCkoX3uuPvrxfouhxS+a8VIRjuHwtLTJjlTgZT6lVnb1qrJ6QyWW9b9vTLiET2CztyFVes2L1xUq8g9iJMZeZ8a+Pdw5r8HpZEDFz5BY6zD/NgybgYg2pjkvqHNkDQlb/HXYdFiIWNHeBdKH872Dao3qNI2ZNNyowlZOK52xZjNhzT/8MbbHn2VkYG2i3eO6R10a2ta7LgxSwbdvZGUMsIiBBmO/5plzoyxQcwFHdESZi7ePmpFR3BbnWF78WKK9TyYP3CbUXw3avWSnrlqGoK9z3tD6ZaapkR1FpylGPX+0w=
+     procedure_id : 1900694118554910089
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie s'il y a affichage des zéros en en-tête pour les nombres
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_AffichageZéroEnTete ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	Type indéterminé : Vrai si zéro en en-tête, faux sinon
+      
+      Procédure Nombre_AffichageZéroEnTete(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_ILZERO , &bufRésultat, 200)
+      
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sAffichageZéro est une chaine
+      	sAffichageZéro = Gauche(bufRésultat, nTailleBuffer-1)
+      		
+      	selon sAffichageZéro 
+      		 cas "0" : 
+      		 	renvoyer faux
+      		 cas "1" :
+      		 	renvoyer vrai
+      		AUTRE CAS : //Ne devrait pas arriver..
+      			dbgAssertion(vrai, "Nombre_AffichageZéroEnTete : Ce cas renvoyé par l'API n'a pas été géré.")
+      		
+      	FIN
+      FIN
+     type : 458752
+   -
+     name : Nombre_SéparateurListes
+     internal_properties : CAAAAAgAAADapy0UreDd41TvOGrU8PTkY640J76QFAhMc6i7LL7dqU2RP+9nkAia0Sneb2sYj9nGgiRSu4fo23Kz0lDqYlGAQd2TghUncbaRiTnBM2atBnP0I62uV8wiqK2vrGW+Nq7dtSULAKVR+aqgy/cH4stha7pXXlAB5Jjmrn1aaMUJ7+C6jz7fuc2u8SS3WoUgmidLUVcTasRyx2MqwVNBH2KFhFfhXNB68wBFXGFhyO/RoKs/zk80RGedh60yfyNXrQ==
+     procedure_id : 1900696871629064091
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le séparateur de listes pour les nombres, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_SéparateurListes ( [<nInfosDeQui> est entier [, <sSép> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sSép (chaîne - valeur par défaut="") : Nouveau séparateur
+      // Valeur de retour :
+      // 	Type indéterminé : Séparateur de listes, vrai ou faux si on le modifie
+      
+      Procédure Nombre_SéparateurListes(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSép est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le séparateur actuel
+      si sSép = "" alors
+      	
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SLIST, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		renvoyer ""
+      	SINON
+      		// Copie du Buffer
+      		sSéparateurListes est une chaine
+      		sSéparateurListes = Gauche(bufRésultat, nTailleBuffer-1)
+      		renvoyer sSéparateurListes
+      	FIN
+      	
+      sinon
+      	
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SLIST, sSép) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      fin
+     type : 458752
+   -
+     name : Nombre_SystèmeMesure
+     internal_properties : CAAAAAgAAAD77J+RfYTE4Il/MjzOB65bmIeGxueO+og0SIFx9G/QokC/tTwrnYV8EzmUfHjsVXYaQNJMA4ueEUn1wlvzbTMBjD8CYy0GES+BRwYiV9J5E34hxeT1PmxQObIoqSSVXsgXmYHRWaQRDb7lut7HYRE/udRBipGMkvhe96wTPOoX0+cNGqVdYx5ZlBYnJFyki1BCHMoWVlA5ONDUgeHsj2dU9lN1pndfm2mWfgkEivSTEMMzMigc
+     procedure_id : 1900697391320227277
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le système de mesure
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_SystèmeMesure ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      // Valeur de retour :
+      // 	chaîne : Système de mesure
+      
+      Procédure Nombre_SystèmeMesure(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_IMEASURE, &bufRésultat, 200)
+      
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	renvoyer ""
+      SINON
+      	
+      	// Copie du Buffer
+      	sSystèmeMesure est une chaine
+      	sSystèmeMesure = Gauche(bufRésultat, nTailleBuffer-1)
+      	selon sSystèmeMesure 
+      		cas 0 : //Système de mesure européen
+      			RENVOYER "Métrique"
+      		cas 1 ://Système de mesure anglais 
+      			RENVOYER "pouces"
+      		autre cas : 
+      			dbgAssertion(Vrai, "Nombre_SystèmeMesure : Ce cas renvoyé par l'API n'a pas été géré.")
+      			renvoyer ""
+      	FIN
+      	
+      FIN
+     type : 458752
+   -
+     name : Nombre_UtilisationChiffresNatifs
+     internal_properties : CAAAAAgAAAD77J+RfYTE4Il/MjzOB65bmIeGxueO+og0SIFx9G/QokC/tTwrnYV8EzmUfHjsVXYaQNJMA4ueEUn1wlvzbTMBjD8CYy0GES+BRwYiV9J5E34hxeT1PmxQObIoqSSVXsgXmYHRWaQRDb7lut7HYRE/udRBipGMkvhe96wTPOoX0+cNGqVdYx5ZlBYnJFyki1BCHMoWVlA5ONDUgeHsj2dU9lN1pndfm2mWfgkEivSTEMMzMigc
+     procedure_id : 1900698825839442218
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie l'utilisation des chiffres natifs
+      // Syntaxe :
+      //[ <Résultat> = ] Nombre_UtilisationChiffresNatifs ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      // Valeur de retour :
+      // 	chaîne : Utilisation des chiffres natifs
+      
+      Procédure Nombre_UtilisationChiffresNatifs(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_IDIGITSUBSTITUTION, &bufRésultat, 200)
+      
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	renvoyer ""
+      SINON
+      	
+      	// Copie du Buffer
+      	sUtilisationChiffresNatifs est une chaine
+      	sUtilisationChiffresNatifs = Gauche(bufRésultat, nTailleBuffer-1)
+      	selon sUtilisationChiffresNatifs 
+      		cas 0 :
+      			RENVOYER "Contexte"
+      		cas 1 :
+      			RENVOYER "Jamais"
+      		CAS 2 :
+      			RENVOYER "National"
+      		autre cas : 
+      			dbgAssertion(Vrai, "Nombre_UtilisationChiffresNatifs : Ce cas renvoyé par l'API n'a pas été géré.")
+      			renvoyer ""
+      	FIN
+      	
+      FIN
+     type : 458752
+   -
+     name : Format_NomAnglaisMonnaie
+     internal_properties : CAAAAAgAAAALPG9BzTQQkDnP2tz2v2aLSLcuNg+WmtCMgOEpZM+A+ug3GVxr/UXcUxl03His9dbaAHIsAyue8UkVInszrdPhjL/ig+0mEQ8BJ+YCV5KZ8z7hpYS1nixwORLYWbQFLjiHiZHBSZSB/e416o5XkSFvqcTRukE8wqgOhxzDzJqnA1f9KlWNE86JhGbX1GxUW0CyDF5KYqyNjCygBb24q7vYeldpSvP7T53Sqt2AFkDDwBODgljs
+     procedure_id : 1900707119422173104
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le nom de la monnaie du format actuel sélectionné : exemple : Français (France), en anglais
+      // Syntaxe :
+      //[ <Résultat> = ] Format_NomAnglaisMonnaie ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Nom de la monnaie en anglais
+      
+      PROCEDURE Format_NomAnglaisMonnaie(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SENGCURRNAME, &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sNomMonnaie est une chaîne
+      	sNomMonnaie = Gauche(bufRésultat, nTailleBuffer-1)
+      	RENVOYER sNomMonnaie 
+      FIN
+     type : 458752
+   -
+     name : Date_FormatDateCourte
+     internal_properties : CAAAAAgAAAAgXUuiU0p7/ZKl5sh2HvpK2UvAofAQ+AZKCZI/bkqDPzG/08FZaMyUz+fQz9lAPdsiMAwwNW+ctcQ1JORk/s9u+bMrKN/PbWhb82fljSqnBEsy89NcgxRUxvsRUFcy9E/8SvL+RxTkoHXJxEQUDWA6wiecaYs0E7/Zj74TAexiRFc3DLFuNEQdaLksN/L7Q6x+EtC6IaNV7kJH3vQiSqtSc0Tub6cBXoPQRWqePS3DVhGVlFnugnmv7UNYEb2t1w==
+     procedure_id : 1900712337809700960
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le format de la date courte, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Date_FormatDateCourte ( [<nInfosDeQui> est entier [, <sFormat> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sFormat (chaîne - valeur par défaut="") : Nouveau format
+      // Valeur de retour :
+      // 	Type indéterminé : Format de la date courte si on le demande, vrai ou faux si on le modifie
+      
+      Procédure Date_FormatDateCourte(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sFormat est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le format actuel
+      si sFormat = "" alors
+      	
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SSHORTDATE, &bufRésultat, 200)
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sFormatDateCourte est une chaine
+      		sFormatDateCourte = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sFormatDateCourte 
+      	FIN
+      	
+      sinon
+      	//On modifie le format
+      	si API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SSHORTDATE, sFormat) = 0 alors
+      		renvoyer faux
+      	sinon 
+      		renvoyer vrai
+      	FIN
+      fin
+      
+      
+     type : 458752
+   -
+     name : Date_FormatDateLongue
+     internal_properties : CAAAAAgAAAAgXUuiU0p7/ZKl5sh2HvpK2UvAofAQ+AZKCZI/bkqDPzG/08FZaMyUz+fQz9lAPdsiMAwwNW+ctcQ1JORk/s9u+bMrKN/PbWhb82fljSqnBEsy89NcgxRUxvsRUFcy9E/8SvL+RxTkoHXJxEQUDWA6wiecaYs0E7/Zj74TAexiRFc3DLFuNEQdaLksN/L7Q6x+EtC6IaNV7kJH3vQiSqtSc0Tub6cBXoPQRWqePS3DVhGVlFnugnmv7UNYEb2t1w==
+     procedure_id : 1900712625572576935
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le format de la date longue, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Date_FormatDateLongue ( [<nInfosDeQui> est entier [, <sFormat> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sFormat (chaîne - valeur par défaut="") : Nouveau format
+      // Valeur de retour :
+      // 	Type indéterminé : Format de la date longue si on le demande, vrai ou faux si on le modifie
+      
+      Procédure Date_FormatDateLongue(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sFormat est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le format actuel
+      si sFormat = "" alors
+      	
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SLONGDATE, &bufRésultat, 200)
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sFormatDateLongue est une chaine
+      		sFormatDateLongue = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sFormatDateLongue 
+      	FIN
+      	
+      SINON
+      	//On modifie le format
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_SLONGDATE, sFormat) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      FIN
+      
+     type : 458752
+   -
+     name : Heure_Format
+     internal_properties : CAAAAAgAAADg4KQ7exqxD7maM9qLikIh/iEapmIuHOYpXlhNOMfrL0eN+7UgkSuaIkOsTowVgC70VwJUPdP2KbAvzjhI1jyo/l96GHwAsgpfS08crMNddwZI8wwp53LWgNG1JKabEDBHJ0vi0fdwrM764YMnqZH2f2j5rZGraX1AIo1U3hiR0nLsRZfGRzyXWfTbfnUvrjL535nuL2IhVq8uGQGr6tJ4Lrc1WV/Ohqy82UbtNp4rT2d7DVNnTEhsMrZIQLNWC/Bj
+     procedure_id : 1900715640639861511
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le format de l'heure, ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Heure_Format ( [<nInfosDeQui> est entier [, <sFormat> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sFormat (chaîne - valeur par défaut="") : Nouveau format
+      // Valeur de retour :
+      // 	Type indéterminé : Format de l'heure si on le demande, vrai ou faux si on le modifie
+      
+      Procédure Heure_Format(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sFormat est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le format actuel
+      si sFormat = "" alors
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_STIMEFORMAT, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sFormatHeure est une chaine
+      		sFormatHeure = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sFormatHeure 
+      	FIN
+      	
+      sinon
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_STIMEFORMAT, sFormat) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      fin
+      
+     type : 458752
+   -
+     name : Heure_SymboleAM
+     internal_properties : CAAAAAgAAADg4KQ7exqxD7maM9qLikIh/iEapmIuHOYpXlhNOMfrL0eN+7UgkSuaIkOsTowVgC70VwJUPdP2KbAvzjhI1jyo/l96GHwAsgpfS08crMNddwZI8wwp53LWgNG1JKabEDBHJ0vi0fdwrM764YMnqZH2f2j5rZGraX1AIo1U3hiR0nLsRZfGRzyXWfTbfnUvrjL535nuL2IhVq8uGQGr6tJ4Lrc1WV/Ohqy82UbtNp4rT2d7DVNnTEhsMrZIQLNWC/Bj
+     procedure_id : 1900716551173075481
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le symbole pour A.M., ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Heure_SymboleAM ( [<nInfosDeQui> est entier [, <sSymbole> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sSymbole (chaîne - valeur par défaut="") : Nouveau symbole
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole pour A.M. si on le demande, vrai ou faux si on le modifie
+      
+      Procédure Heure_SymboleAM(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSymbole est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le format
+      si sSymbole = "" alors
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_S1159, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sSymboleAM est une chaine
+      		sSymboleAM = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sSymboleAM 
+      	FIN
+      	
+      sinon
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_S1159, sSymbole) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      fin
+      
+      
+     type : 458752
+   -
+     name : Heure_SymbolePM
+     internal_properties : CAAAAAgAAADapy0UreDd41TvOGrU8PTkY640J76QFAhMc6i7LL7dqU2RP+9nkAia0Sneb2sYj9nGgiRSu4fo23Kz0lDqYlGAQd2TghUncbaRiTnBM2atBnP0I62uV8wiqK2vrGW+Nq7dtSULAKVR+aqgy/cH4stha7pXXlAB5Jjmrn1aaMUJ7+C6jz7fuc2u8SS3WoUgmidLUVcTasRyx2MqwVNBH2KFhFfhXNB68wBFXGFhyO/RoKs/zk80RGedh60yfyNXrQ==
+     procedure_id : 1900716667137284405
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le symbole pour P.M., ou le modifie
+      // Syntaxe :
+      //[ <Résultat> = ] Heure_SymbolePM ( [<nInfosDeQui> est entier [, <sSymbole> est chaîne]])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer les infos : système ou utilisateur
+      //	sSymbole (chaîne - valeur par défaut="") : Nouveau symbole PM
+      // Valeur de retour :
+      // 	Type indéterminé : Symbole pour P.M. si on le demande, vrai ou faux si on le modifie
+      
+      Procédure Heure_SymbolePM(nInfosDeQui est un entier = LOCALE_USER_DEFAULT, LOCAL sSymbole est une chaine = "")
+      
+      bufRésultat est un buffer sur 200
+      nTailleBuffer est un entier
+      
+      //On renvoie le symbole PM
+      si sSymbole = "" alors
+      		
+      	nTailleBuffer = api("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_S2359, &bufRésultat, 200)
+      	
+      	SI nTailleBuffer = 0 ALORS 
+      		//Echec
+      		RENVOYER ""
+      	SINON
+      		// Copie du Buffer
+      		sSymbolePM est une chaine
+      		sSymbolePM = Gauche(bufRésultat, nTailleBuffer-1)
+      		RENVOYER sSymbolePM 
+      	FIN
+      	
+      sinon
+      	
+      	//On le modifie
+      	SI API("kernel32", "SetLocaleInfoA", nInfosDeQui, LOCALE_S2359, sSymbole) = 0 ALORS
+      		RENVOYER Faux
+      	SINON 
+      		RENVOYER Vrai
+      	FIN
+      	
+      FIN
+     type : 458752
+   -
+     name : Format_NomPays
+     internal_properties : CAAAAAgAAAALPG9BzTQQkDnP2tz2v2aLSLcuNg+WmtCMgOEpZM+A+ug3GVxr/UXcUxl03His9dbaAHIsAyue8UkVInszrdPhjL/ig+0mEQ8BJ+YCV5KZ8z7hpYS1nixwORLYWbQFLjiHiZHBSZSB/e416o5XkSFvqcTRukE8wqgOhxzDzJqnA1f9KlWNE86JhGbX1GxUW0CyDF5KYqyNjCygBb24q7vYeldpSvP7T53Sqt2AFkDDwBODgljs
+     procedure_id : 1901687123537663854
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le nom du pays du poste, dans la langue du poste
+      // Syntaxe :
+      //[ <Résultat> = ] Format_NomPays ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Pays du poste, dans la langue du poste
+      
+      Procédure Format_NomPays(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+                          
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SCOUNTRY, &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sNomPays est une chaîne
+      	sNomPays = Gauche(bufRésultat, nTailleBuffer-1)
+      	renvoyer sNomPays 
+      FIN
+      
+     type : 458752
+   -
+     name : Format_NomAnglaisPays
+     internal_properties : CAAAAAgAAAALPG9BzTQQkDnP2tz2v2aLSLcuNg+WmtCMgOEpZM+A+ug3GVxr/UXcUxl03His9dbaAHIsAyue8UkVInszrdPhjL/ig+0mEQ8BJ+YCV5KZ8z7hpYS1nixwORLYWbQFLjiHiZHBSZSB/e416o5XkSFvqcTRukE8wqgOhxzDzJqnA1f9KlWNE86JhGbX1GxUW0CyDF5KYqyNjCygBb24q7vYeldpSvP7T53Sqt2AFkDDwBODgljs
+     procedure_id : 1901690602461655361
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le nom du pays du poste, en anglais
+      // Syntaxe :
+      //[ <Résultat> = ] Format_NomAnglaisPays ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Pays du poste, en anglais
+      
+      Procédure Format_NomAnglaisPays(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+                          
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, locale_SENGCOUNTRY , &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sNomPays est une chaîne
+      	sNomPays = Gauche(bufRésultat, nTailleBuffer-1)
+      	renvoyer sNomPays 
+      FIN
+      
+     type : 458752
+   -
+     name : Format_CodePays
+     internal_properties : CAAAAAgAAAALPG9BzTQQkDnP2tz2v2aLSLcuNg+WmtCMgOEpZM+A+ug3GVxr/UXcUxl03His9dbaAHIsAyue8UkVInszrdPhjL/ig+0mEQ8BJ+YCV5KZ8z7hpYS1nixwORLYWbQFLjiHiZHBSZSB/e416o5XkSFvqcTRukE8wqgOhxzDzJqnA1f9KlWNE86JhGbX1GxUW0CyDF5KYqyNjCygBb24q7vYeldpSvP7T53Sqt2AFkDDwBODgljs
+     procedure_id : 1901693931064903695
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le code du pays du poste, c'est le code téléphonique international
+      // Syntaxe :
+      //[ <Résultat> = ] Format_CodePays ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Code du pays du poste
+      
+      Procédure Format_CodePays(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+                          
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_ICOUNTRY , &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sCodePays est une chaîne
+      	sCodePays = Gauche(bufRésultat, nTailleBuffer-1)
+      	renvoyer sCodePays 
+      FIN
+      
+      
+     type : 458752
+   -
+     name : Format_NomAnglaisLangue
+     internal_properties : CAAAAAgAAAALPG9BzTQQkDnP2tz2v2aLSLcuNg+WmtCMgOEpZM+A+ug3GVxr/UXcUxl03His9dbaAHIsAyue8UkVInszrdPhjL/ig+0mEQ8BJ+YCV5KZ8z7hpYS1nixwORLYWbQFLjiHiZHBSZSB/e416o5XkSFvqcTRukE8wqgOhxzDzJqnA1f9KlWNE86JhGbX1GxUW0CyDF5KYqyNjCygBb24q7vYeldpSvP7T53Sqt2AFkDDwBODgljs
+     procedure_id : 1901705768002704589
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le nom de la langue du poste, en anglais
+      // Syntaxe :
+      //[ <Résultat> = ] Format_NomAnglaisLangue ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Nom de la langue du poste, en anglais
+      
+      Procédure Format_NomAnglaisLangue(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+                          
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SENGLANGUAGE , &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sNomLangue est une chaîne
+      	sNomLangue = Gauche(bufRésultat, nTailleBuffer-1)
+      	renvoyer sNomLangue 
+      FIN
+      
+     type : 458752
+   -
+     name : Format_NomLangue
+     internal_properties : CAAAAAgAAAALPG9BzTQQkDnP2tz2v2aLSLcuNg+WmtCMgOEpZM+A+ug3GVxr/UXcUxl03His9dbaAHIsAyue8UkVInszrdPhjL/ig+0mEQ8BJ+YCV5KZ8z7hpYS1nixwORLYWbQFLjiHiZHBSZSB/e416o5XkSFvqcTRukE8wqgOhxzDzJqnA1f9KlWNE86JhGbX1GxUW0CyDF5KYqyNjCygBb24q7vYeldpSvP7T53Sqt2AFkDDwBODgljs
+     procedure_id : 1901708168889785552
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le nom de la langue du poste, dans la langue du poste
+      // Syntaxe :
+      //[ <Résultat> = ] Format_NomLangue ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Langue du poste, dans la langue du poste
+      
+      Procédure Format_NomLangue(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+                          
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_SLANGUAGE, &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sNomPays est une chaîne
+      	sNomPays = Gauche(bufRésultat, nTailleBuffer-1)
+      	renvoyer sNomPays 
+      FIN
+      
+     type : 458752
+   -
+     name : Format_PremierJourSemaine
+     internal_properties : CAAAAAgAAABjy2W6kvnSq80zvf5e/4/1r/pbMHSlosfokBO+mPCwuAsUIMAzrKjrsqn9TmOHVbLkQrtdOJ9NVHuu6CO4g4wBV5DME4/RP0KoZ6gbr5LEap+WnY7KHzlADNYPWXn3ptOQFkkpomoxOaOKkleTVov5opw6S1Yy4qRnsO7C3HF/GQpWtJkhiKfQ4lTYGmlgTFF2oFcT6cOJhptvdQbwlMscrWH88TwfwcOg+BCJFJ8NfPGE8KHwDipONEWyQ/wbA07iOqxQ3W3qaw==
+     procedure_id : 1901725310155243987
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie le 1er jour de la semaine
+      // Syntaxe :
+      //[ <Résultat> = ] Format_PremierJourSemaine ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	chaîne : Premier jour de la semaine
+      
+      Procédure Format_PremierJourSemaine(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      bufRésultat est un Buffer sur 200
+      nTailleBuffer est un entier
+      
+      nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, LOCALE_IFIRSTDAYOFWEEK , &bufRésultat, 200)
+      
+      SI nTailleBuffer = 0 ALORS 
+      	//Echec
+      	RENVOYER ""
+      SINON
+      	// Copie du Buffer
+      	sJour est une chaîne
+      	sJour = Gauche(bufRésultat, nTailleBuffer-1)
+      	//Pour l'instant, on a "0" (= lundi), "1" (=mardi) ... 
+      	
+      	//On voudrait le jour en toute lettre dans la langue du pays, 
+      	//on va le récupérer en appelant l'API GetLocaleInfoA, avec la constante "LOCALE_SDAYNAMExxx" qui correspond 
+      	//sachant que LOCALE_SDAYNAME1 c'est pour lundi, LOCALE_SDAYNAME2, c'est pour mardi ...
+      	
+      	nJour est un entier
+      	selon sJour 
+      		cas "0" : 
+      			nJour = LOCALE_SDAYNAME1
+      			
+      		cas "1" : 			
+      			nJour = LOCALE_SDAYNAME2
+      			
+      		cas "2" :
+      			nJour = LOCALE_SDAYNAME3 
+      			
+      		cas "3" :
+      			nJour = LOCALE_SDAYNAME4 
+      			
+      		cas "4" :
+      			nJour = LOCALE_SDAYNAME5 
+      			
+      		cas "5" :
+      			nJour = LOCALE_SDAYNAME6
+      			
+      		cas "6" :
+      			nJour = LOCALE_SDAYNAME7 
+      			
+      		AUTRE CAS :
+      			dbgassertion(vrai,  "Format_PremierJourSemaine : Ce cas renvoyé par l'API n'a pas été géré.")
+      				FIN
+      	
+      	nTailleBuffer = API("kernel32", "GetLocaleInfoA", nInfosDeQui, nJour, &bufRésultat, 200)
+      	// Copie du Buffer
+      	sJour = Gauche(bufRésultat, nTailleBuffer-1)
+      	RENVOYER sJour
+      FIN
+      
+     type : 458752
+   -
+     name : _ListeFormatsDateCourte
+     internal_properties : CAAAAAgAAACeL9IezGBNVACIuf8CViVeybDWr3Ay432igMlPx+CylCLGYiwMZi4hppfw9xSXna+Nuq7mpNoJQHQ1/BgMWph8S46nIS5odrJ9MoqPP1DlczYkGOe4fkU2kUgw6W4Ogs9zHgRb2w3J1mtYhsqJNgmkqwV0xP2naqXPdgBvaA8xKG0bUv/HZZCR6HeMVejfd61xAzio/L1cYPNEnmb5dV8Pf7oT5A==
+     procedure_id : 1901758673462151266
+     type_code : 15
+     code : |1-
+      // Résumé : Callback qui est utilisée pour récupérer la liste des formats de date dispos pour la langue en cours
+      // Syntaxe :
+      //[ <Résultat> = ] _ListeFormatsDateCourte (<nPointeurSurFormat> est entier)
+      //
+      // Paramètres :
+      //	nPointeurSurFormat (entier) : Pointeur sur un buffer
+      // Valeur de retour :
+      // 	booléen : Renvoie Vrai pour continuer le listage des formats
+      
+      Procédure privee _ListeFormatsDateCourte(nPointeurSurFormat est un entier)
+      
+      gbufListeFormatsDateCourte += [Rc] + ChaîneRécupère(nPointeurSurFormat,crAdresseASCIIZ)
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : Date_ListeFormatsDateCourte
+     internal_properties : CAAAAAgAAAAwuIGZqG8Z92bBzGavgkvkEwbFe/FlhodgsF4OdTdcCfoCLpbX7hbibtzftGhHaauUTU9qB4mLjpO2QI7y3hCqw4d0qYIxX6OodwcDBXdJMahTFKG9kH2KFLGsGrUGuJUnjiVH7N9rlJaZtL/OIG8apfP3QsxVMNeeExIgX9ddkJNtrc/82drHo8Ay0nc7ejjU8YRh6BwqUDHYjkSPGhRc/ibWTsbT
+     procedure_id : 1901764609115413833
+     type_code : 15
+     code : |1+
+      // Résumé : Liste les formats de date courte disponibles pour le format actuel (la langue en cours)
+      // Syntaxe :
+      //[ <Résultat> = ] Date_ListeFormatsDateCourte ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	Type indéterminé : Liste des formats de date courte, Chaîne vide si problème
+      
+      Procédure Date_ListeFormatsDateCourte(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      gbufListeFormatsDateCourte = ""
+      
+      SI API("kernel32", "EnumDateFormatsA", &_ListeFormatsDateCourte, nInfosDeQui, DATE_SHORTDATE) <> 0 ALORS
+      	renvoyer gbufListeFormatsDateCourte
+      sinon
+      	renvoyer ""
+      fin
+     type : 458752
+   -
+     name : Date_ListeFormatsDateLongue
+     internal_properties : CAAAAAgAAAAwuIGZqG8Z92bBzGavgkvkEwbFe/FlhodgsF4OdTdcCfoCLpbX7hbibtzftGhHaauUTU9qB4mLjpO2QI7y3hCqw4d0qYIxX6OodwcDBXdJMahTFKG9kH2KFLGsGrUGuJUnjiVH7N9rlJaZtL/OIG8apfP3QsxVMNeeExIgX9ddkJNtrc/82drHo8Ay0nc7ejjU8YRh6BwqUDHYjkSPGhRc/ibWTsbT
+     procedure_id : 1901769247690807597
+     type_code : 15
+     code : |1+
+      // Résumé : Liste les formats de date longue disponibles pour le format actuel (la langue en cours)
+      // Syntaxe :
+      //[ <Résultat> = ] Date_ListeFormatsDateLongue ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	Type indéterminé : Liste des formats de date longue, Chaîne vide si problème
+      
+      Procédure Date_ListeFormatsDateLongue(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      gbufListeFormatsDatelongue = ""
+      
+      SI API("kernel32", "EnumDateFormatsA", &_ListeFormatsDateLongue, nInfosDeQui, DATE_LONGDATE) <> 0 ALORS
+      	renvoyer gbufListeFormatsDateLongue
+      sinon
+      	renvoyer ""
+      fin
+     type : 458752
+   -
+     name : _ListeFormatsDateLongue
+     internal_properties : CAAAAAgAAACeL9IezGBNVACIuf8CViVeybDWr3Ay432igMlPx+CylCLGYiwMZi4hppfw9xSXna+Nuq7mpNoJQHQ1/BgMWph8S46nIS5odrJ9MoqPP1DlczYkGOe4fkU2kUgw6W4Ogs9zHgRb2w3J1mtYhsqJNgmkqwV0xP2naqXPdgBvaA8xKG0bUv/HZZCR6HeMVejfd61xAzio/L1cYPNEnmb5dV8Pf7oT5A==
+     procedure_id : 1901769595583239709
+     type_code : 15
+     code : |1-
+      // Résumé : Callback qui est utilisée pour récupérer la liste des formats de date dispos pour la langue en cours
+      // Syntaxe :
+      //[ <Résultat> = ] _ListeFormatsDateLongue (<nPointeurSurFormat> est entier)
+      //
+      // Paramètres :
+      //	nPointeurSurFormat (entier) : Pointeur sur un buffer
+      // Valeur de retour :
+      // 	booléen : Renvoie Vrai pour continuer le listage des formats
+      
+      Procédure privee _ListeFormatsDateLongue(nPointeurSurFormat est un entier)
+      
+      gbufListeFormatsDateLongue += [Rc] + ChaîneRécupère(nPointeurSurFormat,crAdresseASCIIZ)
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : Heure_ListeFormatsHeure
+     internal_properties : CAAAAAgAAAAwuIGZqG8Z92bBzGavgkvkEwbFe/FlhodgsF4OdTdcCfoCLpbX7hbibtzftGhHaauUTU9qB4mLjpO2QI7y3hCqw4d0qYIxX6OodwcDBXdJMahTFKG9kH2KFLGsGrUGuJUnjiVH7N9rlJaZtL/OIG8apfP3QsxVMNeeExIgX9ddkJNtrc/82drHo8Ay0nc7ejjU8YRh6BwqUDHYjkSPGhRc/ibWTsbT
+     procedure_id : 1901771760246933361
+     type_code : 15
+     code : |1+
+      // Résumé : Liste les formats d'heure disponibles pour le format actuel (la langue en cours)
+      // Syntaxe :
+      //[ <Résultat> = ] Heure_ListeFormatsHeure ( [<nInfosDeQui> est entier])
+      //
+      // Paramètres :
+      //	nInfosDeQui (entier - valeur par défaut=1024) : De qui on veut récupérer l'info : l'utilisateur ou le système
+      // Valeur de retour :
+      // 	Type indéterminé : Liste des formats d'heure, Chaîne vide si problème
+      
+      Procédure Heure_ListeFormatsHeure(nInfosDeQui est un entier = LOCALE_USER_DEFAULT)
+      
+      gbufListeFormatsHeure = ""
+      
+      SI API("kernel32", "EnumTimeFormatsA", &_ListeFormatsHeure, nInfosDeQui, 0) <> 0 ALORS
+      	renvoyer gbufListeFormatsHeure
+      sinon
+      	renvoyer ""
+      fin
+     type : 458752
+   -
+     name : _ListeFormatsHeure
+     internal_properties : CAAAAAgAAACeL9IezGBNVACIuf8CViVeybDWr3Ay432igMlPx+CylCLGYiwMZi4hppfw9xSXna+Nuq7mpNoJQHQ1/BgMWph8S46nIS5odrJ9MoqPP1DlczYkGOe4fkU2kUgw6W4Ogs9zHgRb2w3J1mtYhsqJNgmkqwV0xP2naqXPdgBvaA8xKG0bUv/HZZCR6HeMVejfd61xAzio/L1cYPNEnmb5dV8Pf7oT5A==
+     procedure_id : 1901772052304777615
+     type_code : 15
+     code : |1-
+      // Résumé : Callback qui est utilisée pour récupérer la liste des formats d'heure dispos pour la langue en cours
+      // Syntaxe :
+      //[ <Résultat> = ] _ListeFormatsHeure (<nPointeurSurFormat> est entier)
+      //
+      // Paramètres :
+      //	nPointeurSurFormat (entier) : Pointeur sur un buffer
+      // Valeur de retour :
+      // 	booléen : Renvoie Vrai pour continuer le listage des formats
+      
+      Procédure privee _ListeFormatsHeure(nPointeurSurFormat est un entier)
+      
+      gbufListeFormatsHeure += [Rc] + ChaîneRécupère(nPointeurSurFormat,crAdresseASCIIZ)
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : _CréeTabNombreFormatsNégatifs
+     internal_properties : CAAAAAgAAACm0UKUlpqsGXRki2lW6LNqxbI+MgbFISZOsDDJGW7iR3CtG0rZqOSZ/obyUNZ0oRq+jmZbfgRR494aUeYMGkz9tcZQZPDM+47EzM7N9SJpEgeU9IIGq1DvvdLNXdgFvdhEk6TYbU7yLWGcNyhJocz1etju+9UeGb6xLi35/jY259MNtUdkR5bz6cZI0FUxVBY0UOuCnTY=
+     procedure_id : 1901777704484889793
+     type_code : 15
+     code : |1+
+      // Résumé : Stocke en mémoire la liste des formats des nombres négatifs dispos 
+      // Syntaxe :
+      //_CréeTabNombreFormatsNégatifs (<nInfosDeQui>, <tabNombreFormatsnégatifs>)
+      //
+      // Paramètres :
+      //	nInfosDeQui : De qui on veut récupérer les infos : système ou utilisateur
+      //	tabNombreFormatsnégatifs : Tableau qui sera rempli avec les formats de nombre négatif
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure _CréeTabNombreFormatsNégatifs(nInfosDeQui, tabNombreFormatsnégatifs)
+      
+      TableauSupprimeTout(tabNombreFormatsnégatifs)
+      
+      sSymboleDécimal est une chaine = nombre_SéparateurDécimales(nInfosDeQui)
+      ssymboleNégatif est une chaine = Nombre_SymboleNégatif(nInfosDeQui)
+      
+      // Exemple : (1.1)
+      tableauajoute(tabNombreFormatsnégatifs, PARENTHESE_OUVRANTE + "1" + sSymboleDécimal + "1" + PARENTHESE_FERMANTE  )
+      
+      //Exemple : -1.1
+      TableauAjoute(tabNombreFormatsnégatifs, ssymboleNégatif + "1" + sSymboleDécimal + "1" )	
+      	
+      //Exemple : - 1.1
+      TableauAjoute(tabNombreFormatsnégatifs, ssymboleNégatif + ESP + "1" + sSymboleDécimal  + "1")
+      
+      //Exemple : 1.1-
+      TableauAjoute(tabNombreFormatsnégatifs,  "1" + sSymboleDécimal + "1" + ssymboleNégatif )
+      
+      //Exemple : 1.1 -		
+      TableauAjoute(tabNombreFormatsnégatifs,  "1" + sSymboleDécimal  + "1"  + ESP + ssymboleNégatif )
+      
+      
+      
+     type : 458752
+   -
+     name : _CréeTabMonétaireFormatsNégatifs
+     internal_properties : CAAAAAgAAACm0UKUlpqsGXRki2lW6LNqxbI+MgbFISZOsDDJGW7iR3CtG0rZqOSZ/obyUNZ0oRq+jmZbfgRR494aUeYMGkz9tcZQZPDM+47EzM7N9SJpEgeU9IIGq1DvvdLNXdgFvdhEk6TYbU7yLWGcNyhJocz1etju+9UeGb6xLi35/jY259MNtUdkR5bz6cZI0FUxVBY0UOuCnTY=
+     procedure_id : 1901825129554370572
+     type_code : 15
+     code : |1+
+      // Résumé : Stocke en mémoire la liste des formats des négatifs dispos pour les monétaires
+      // Syntaxe :
+      //_CréeTabMonétaireFormatsNégatifs (<nInfosDeQui>, <tabMonétaireFormatsnégatifs>)
+      //
+      // Paramètres :
+      //	nInfosDeQui : De qui on veut récupérer les infos : système ou utilisateur
+      //	tabMonétaireFormatsnégatifs : Tableau qui sera rempli avec les formats des négatifs pour les monétaires
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure _CréeTabMonétaireFormatsNégatifs(nInfosDeQui, tabMonétaireFormatsnégatifs)
+      
+      TableauSupprimeTout(tabMonétaireFormatsnégatifs)
+      
+      sSymboleMonétaire est une chaine = Monétaire_SymboleMonétaire(nInfosDeQui)
+      sSymboleDécimal est une chaine = Monétaire_SéparateurDécimales(nInfosDeQui)
+      
+      // Exemple : ($1.1)
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs,  PARENTHESE_OUVRANTE + sSymboleMonétaire + "1" + sSymboleDécimal + "1" + PARENTHESE_FERMANTE)
+      
+      //Exemple : -$1.1
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs,  SIGNE_MOINS + sSymboleMonétaire + "1" + sSymboleDécimal + "1")
+      
+      //Exemple : $-1.1
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, sSymboleMonétaire + SIGNE_MOINS + "1" + sSymboleDécimal + "1" )
+      
+      //Exemple : $1.1-
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, sSymboleMonétaire + "1" + sSymboleDécimal + "1" + SIGNE_MOINS )
+      
+      //Exemple : (1.1$)
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, PARENTHESE_OUVRANTE + "1" + sSymboleDécimal + "1" + sSymboleMonétaire + PARENTHESE_FERMANTE )
+      
+      //Exemple : -1.1$
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, SIGNE_MOINS + "1" + sSymboleDécimal  + "1" + sSymboleMonétaire)
+       
+      //Exemple : 1.1-$
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs,"1" + sSymboleDécimal  + "1" + SIGNE_MOINS + sSymboleMonétaire	)
+      
+      //Exemple : 1.1$-
+       TableauAjouteLigne(tabMonétaireFormatsnégatifs, "1" + sSymboleDécimal  + "1" + sSymboleMonétaire + SIGNE_MOINS )
+      
+      //Exemple : -1.1 $
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, SIGNE_MOINS + "1" + sSymboleDécimal  + "1" + ESP + sSymboleMonétaire)
+      
+      //Exemple : -$ 1.1
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs,  SIGNE_MOINS + sSymboleMonétaire + ESP + "1" + sSymboleDécimal  + "1")
+      
+      //Exemple : 1.1 $-
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs,  "1" + sSymboleDécimal  + "1"  + ESP + sSymboleMonétaire + SIGNE_MOINS )
+      
+      //Exemple : $ 1.1-
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, sSymboleMonétaire + ESP + "1" + sSymboleDécimal  + "1" + SIGNE_MOINS )
+      
+      //Exemple : $ -1.1
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, sSymboleMonétaire + ESP + SIGNE_MOINS + "1" + sSymboleDécimal  + "1" )
+      
+      //Exemple : 1.1- $
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, "1" + sSymboleDécimal  + "1" + SIGNE_MOINS + ESP + sSymboleMonétaire)
+      
+      //Exemple : ($ 1.1)
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, PARENTHESE_OUVRANTE + sSymboleMonétaire + ESP + "1" + sSymboleDécimal  + "1" + PARENTHESE_FERMANTE )
+      
+      //Exemple : (1.1 $)
+      TableauAjouteLigne(tabMonétaireFormatsnégatifs, PARENTHESE_OUVRANTE + "1" + sSymboleDécimal + "1" + ESP + sSymboleMonétaire + PARENTHESE_FERMANTE )
+     type : 458752
+   -
+     name : _CréeTabMonétaireFormatsPositifs
+     internal_properties : CAAAAAgAAACm0UKUlpqsGXRki2lW6LNqxbI+MgbFISZOsDDJGW7iR3CtG0rZqOSZ/obyUNZ0oRq+jmZbfgRR494aUeYMGkz9tcZQZPDM+47EzM7N9SJpEgeU9IIGq1DvvdLNXdgFvdhEk6TYbU7yLWGcNyhJocz1etju+9UeGb6xLi35/jY259MNtUdkR5bz6cZI0FUxVBY0UOuCnTY=
+     procedure_id : 1901829098104486261
+     type_code : 15
+     code : |1+
+      // Résumé : Stocke en mémoire la liste des formats des positifs dispos pour les monétaires
+      // Syntaxe :
+      //_CréeTabMonétaireFormatsPositifs (<nInfosDeQui>, <tabMonétaireFormatsPositifs>)
+      //
+      // Paramètres :
+      //	nInfosDeQui : De qui on veut récupérer les infos : système ou utilisateur
+      //	tabMonétaireFormatsPositifs : Tableau qui sera rempli avec les formats des positifs pour les monétaires
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure _CréeTabMonétaireFormatsPositifs(nInfosDeQui, tabMonétaireFormatsPositifs)
+      
+      TableauSupprimeTout(tabMonétaireFormatsPositifs)
+      
+      sSymboleMonétaire est une chaine = Monétaire_SymboleMonétaire(nInfosDeQui)
+      sSymboleDécimal est une chaine = Monétaire_SéparateurDécimales(nInfosDeQui)
+      
+      // Symbole monétaire en préfixe, et pas de séparation entre le symbole et le monétaire
+      //Exemple : $1.1
+      TableauAjouteLigne(tabMonétaireFormatsPositifs, sSymboleMonétaire + "1" + sSymboleDécimal + "1"  	)
+      
+      // Symbole monétaire en suffixe, et pas de séparation entre le symbole et le monétaire
+      //Exemple : 1.1$
+      TableauAjouteLigne(tabMonétaireFormatsPositifs, "1" + sSymboleDécimal + "1" + sSymboleMonétaire )	
+      
+      // Symbole monétaire en préfixe, et séparation entre le symbole et le monétaire
+      //Exemple : $ 1.1
+      TableauAjouteLigne(tabMonétaireFormatsPositifs, sSymboleMonétaire + ESP + "1" + sSymboleDécimal +"1" )
+      
+      // Symbole monétaire en suffixe, et séparation entre le symbole et le monétaire
+      //Exemple : 1.1 $
+      TableauAjouteLigne(tabMonétaireFormatsPositifs, "1" + sSymboleDécimal + "1" + ESP + sSymboleMonétaire )
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x100acdde005861cb
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

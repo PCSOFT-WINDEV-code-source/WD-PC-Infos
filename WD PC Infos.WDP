@@ -1,0 +1,90 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD PC Infos
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : Le projet a pour but de ...
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD PC Infos
+    internal_properties : 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
+    configuration_id : 12116799915797053599
+    type : 1
+    generation_name : WD PC Infos.exe
+    version :
+     version : 1.00Ac
+    icon_filename : .\international.ico
+    language : 1
+    new_features_help :
+     name : ""
+     internal_properties : CAAAAAgAAAABCZ6cpyDBJeFNzK4D1wc+n8swLC3Uh1Ihq3PB+nItC620VaxNhkLjjMn2ZHE4OM/1sXOi2ohugIRy/g==
+ elements :
+  identifier : 0x4cf3b640000f97d6
+  elements :
+   -
+     name : Procedures globales de WD PC Infos
+     identifier : 0x4a604ac50002d20b
+     internal_properties : CAAAAAgAAACkooyoF0zkh1DqNOm7be5FYiehcbCGQ4GKWGJjJesp1xUpr5g+unGd/SeRbzepUUexsQ==
+     physical_name : .\Procedures globales de WD PC Infos.wdg
+     type : 7
+   -
+     name : TEST_OptionsRégionales
+     identifier : 0x4cf3b8e300e9e78b
+     internal_properties : CAAAAAgAAACRbcnd6pefUB/V/zR2OU8W85DO1tlX2HNW7RC9TdPDbYeZATaTbS7YOOLcJOzknAz0fA==
+     physical_name : .\TEST_OptionsRégionales.wxt
+     type : 17
+   -
+     name : FEN_OptionsRégionales
+     identifier : 0x4a604bb8000486d9
+     internal_properties : CAAAAAgAAAAtKQUZppObRBOp8yh6LqOCI2J6IgtBx252gb/OXKT2ItpqbFt/eTLcPObQKOgY4NA4OA==
+     physical_name : .\FEN_OptionsRegionales.wdw
+     type : 2
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components :
+   -
+     physical_name : .\OptionsRégionalesLinguistiques\OptionsRégionalesLinguistiques.wci
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAAArAU1gVoKbyG3WU8GPvRPqY3T5JFs9w8BJsSepVMYsz5K1EL4kmrYK/5Lay84uMDTh0jZW71/hpjt2P437quRn
+  type_code : 0
+  p_codes :
+   -
+     code : |1+
+      gnInfosDeQui est un entier = LOCALE_USER_DEFAULT
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD PC Infos
+     identifier : 0x4cf3b64000139843
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==
